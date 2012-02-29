@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Effect Files">
+      <UniqueIdentifier>{4f64f7da-f83f-45aa-882a-1095f8b4812c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DeferredDemo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Box.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cylinder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawableTex2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Effects.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InputLayouts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LightGeometry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LightSource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NDCQuad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Quad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderTexture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sky.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sphere.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vertex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\d3dApp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\d3dUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\GameTimer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TextureMgr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Light.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DeferredDemo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Box.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cylinder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawableTex2D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Effects.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InputLayouts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LightGeometry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LightSource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NDCQuad.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Quad.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderTexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sky.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sphere.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\d3dApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\d3dUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\GameTimer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\TextureMgr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="buildshadowmap.fx">
+      <Filter>Effect Files</Filter>
+    </None>
+    <None Include="drawshadowmap.fx">
+      <Filter>Effect Files</Filter>
+    </None>
+    <None Include="gengbuffer.fx">
+      <Filter>Effect Files</Filter>
+    </None>
+    <None Include="lighthelper.fx">
+      <Filter>Effect Files</Filter>
+    </None>
+    <None Include="lighting.fx">
+      <Filter>Effect Files</Filter>
+    </None>
+    <None Include="shading.fx">
+      <Filter>Effect Files</Filter>
+    </None>
+    <None Include="shadow.fx">
+      <Filter>Effect Files</Filter>
+    </None>
+    <None Include="sky.fx">
+      <Filter>Effect Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

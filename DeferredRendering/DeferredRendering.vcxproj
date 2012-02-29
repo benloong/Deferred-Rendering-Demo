@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A775162A-77A5-403B-AD1B-08577E45497A}</ProjectGuid>
+    <RootNamespace>DeferredRendering</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\Camera.h" />
+    <ClInclude Include="..\Common\d3dApp.h" />
+    <ClInclude Include="..\Common\d3dUtil.h" />
+    <ClInclude Include="..\Common\GameTimer.h" />
+    <ClInclude Include="..\Common\TextureMgr.h" />
+    <ClInclude Include="Box.h" />
+    <ClInclude Include="Cylinder.h" />
+    <ClInclude Include="DeferredDemo.h" />
+    <ClInclude Include="DrawableTex2D.h" />
+    <ClInclude Include="Effects.h" />
+    <ClInclude Include="InputLayouts.h" />
+    <ClInclude Include="Light.h" />
+    <ClInclude Include="LightGeometry.h" />
+    <ClInclude Include="LightSource.h" />
+    <ClInclude Include="NDCQuad.h" />
+    <ClInclude Include="Quad.h" />
+    <ClInclude Include="RenderTexture.h" />
+    <ClInclude Include="Sky.h" />
+    <ClInclude Include="Sphere.h" />
+    <ClInclude Include="Vertex.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\Camera.cpp" />
+    <ClCompile Include="..\Common\d3dApp.cpp" />
+    <ClCompile Include="..\Common\d3dUtil.cpp" />
+    <ClCompile Include="..\Common\GameTimer.cpp" />
+    <ClCompile Include="..\Common\TextureMgr.cpp" />
+    <ClCompile Include="Box.cpp" />
+    <ClCompile Include="Cylinder.cpp" />
+    <ClCompile Include="DeferredDemo.cpp" />
+    <ClCompile Include="DrawableTex2D.cpp" />
+    <ClCompile Include="Effects.cpp" />
+    <ClCompile Include="InputLayouts.cpp" />
+    <ClCompile Include="LightGeometry.cpp" />
+    <ClCompile Include="LightSource.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="NDCQuad.cpp" />
+    <ClCompile Include="Quad.cpp" />
+    <ClCompile Include="RenderTexture.cpp" />
+    <ClCompile Include="Sky.cpp" />
+    <ClCompile Include="Sphere.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="buildshadowmap.fx" />
+    <None Include="drawshadowmap.fx" />
+    <None Include="gengbuffer.fx" />
+    <None Include="lighthelper.fx" />
+    <None Include="lighting.fx" />
+    <None Include="shading.fx" />
+    <None Include="shadow.fx" />
+    <None Include="sky.fx" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
